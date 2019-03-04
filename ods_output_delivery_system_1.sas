@@ -2,7 +2,7 @@
 
 /*
 ods csv file = file physical location
-your proc
+your proc (can not be data.. it is only proc)
 rnd
 ods csv close
 */
@@ -34,7 +34,7 @@ except for html we need to give path*/
 data golf;
 input coursename : $9. @10 num_holes par yeardage greenfees;
 datalines;
-Ka Plan    18 73 7263 125.00
+Ka_Plan    18 73 7263 125.00
 Puka       18 72 6945 55.00
 ;
 run;
@@ -74,7 +74,7 @@ ods html close;
 /*second method*/
 ods html;
 file = "C:\Users\mfatemeh\Desktop\test\golf2.html";
-style = EGDefault;
+style = EGDefault; /*style is not necessary*/
 proc print data=golf; /*an existing data*/
 run;
 ods html close;
