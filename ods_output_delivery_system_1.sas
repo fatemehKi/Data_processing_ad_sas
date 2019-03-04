@@ -62,6 +62,7 @@ run;
 ods rtf close;
 
 /*creating the HTML file*/
+/*first method*/
 ods html;
 path = "C:\Users\mfatemeh\Desktop\test";
 file = 'golf1.html';
@@ -70,5 +71,10 @@ proc print data=golf; /*an existing data*/
 run;
 ods html close;
 
-/*therefore, we have a bit different format in html*/
- 
+/*second method*/
+ods html;
+file = "C:\Users\mfatemeh\Desktop\test\golf2.html";
+style = EGDefault;
+proc print data=golf; /*an existing data*/
+run;
+ods html close;
