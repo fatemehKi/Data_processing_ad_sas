@@ -6,7 +6,7 @@
 /*advanced sas*/
 /*
 ins:
-infile 'datalines' to get the data    file 'c:\sas\data\file.sas'
+infile 'datalines' to get the data    file 'c:\sas\data\file.sas' /---location that we are directing to---/
 input var1.. varn                     put var1
 import                                export
 
