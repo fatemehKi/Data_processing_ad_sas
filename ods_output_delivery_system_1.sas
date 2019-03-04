@@ -40,7 +40,7 @@ Puka       18 72 6945 55.00
 run;
 /*below codes create a golf1.csv file for us and does let us to have 
 it in the mentioned physical location*/
-ods csv file= 'C:\Users\mfatemeh\Desktop\test\golf1.csv';
+ods csv file= 'C:\Users\mfatemeh\Desktop\test\golf1.csv'; /*regardless of the existance of that csv file*/
 proc print data=golf noobs; /*an existing data*/
 run;
 ods csv close; 
