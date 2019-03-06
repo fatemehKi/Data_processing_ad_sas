@@ -315,7 +315,7 @@ quit;
 /*The tables PAYROLL2 AND STAFF2 contains data on employees with changes in job code or salary and data on new employees. A report is needed in displaying all information only on new employees as shown below: (ref: 3.8)
 IDNUM FNAME LNAME STATE JOBCODE HIRED
 To produce this report, break the problem into several steps:
-Find the IDNUM values of new employees. ìoldî employee IDís stored in the STAFF table. The STAFF2 table contains the IDís of ìoldî employees with status changes plus the IDís of the new employees.
+Find the IDNUM values of new employees. ‚Äúold‚Äù employee ID‚Äôs stored in the STAFF table. The STAFF2 table contains the ID‚Äôs of ‚Äúold‚Äù employees with status changes plus the ID‚Äôs of the new employees.
 In a separate query, display information about all employees in the STAFF2 and PAYROLL2 tables. For each employee, display the variables IDNUM, FNAME, LNAME, AND STATE from STAFF2 table with the variables JOBCODE AND HIRED from the PAYROLL2 table.
 Combine the 2 queries in Part a. and b. so that the results of the second query (displaying all employees) is subset to display only employees returned from the first query.
 Create a report displaying employees who have changed job codes (column JOBCODE in the table PAYROLL differs from the same column in the table PAYROLL2). You may use skills acquired in earlier sections. (REF: 3.10)
