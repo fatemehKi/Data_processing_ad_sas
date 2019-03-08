@@ -201,14 +201,14 @@ RUN;
 	%global curr_&i;
 	data _null_;
 		year=(int(&date/100)*100);
-		call symput('year', year);
+		call symput('year', year); /*putting year in the 'year'*/
 	run;
 
 	%put year &year;
 
 	data _null_;
 		month=&date - &year;
-		call symput("month", month);
+		call symput("month", month); /*new macro callinf month*/
 	run;
 
 	%put month &month;
@@ -233,3 +233,6 @@ RUN;
 %put current &current;
 %put curr_1 &curr_1;
 %put curr_2 &curr_2;
+
+
+
