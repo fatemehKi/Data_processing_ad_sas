@@ -96,3 +96,11 @@ run;
 /*creating your own macro procs libraries*/
 %include "C:\Users\mfatemeh\Desktop\my_macro.sas";
 %pmeans_1(sashelp.cars, Enginesize, Horsepower);
+
+/***saved file in my_macro***/
+
+%macro pmeans_1(dsn, var1, var2);
+proc means data = &dsn;
+var &var1 &var2;
+run;
+%mend;
