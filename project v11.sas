@@ -216,7 +216,7 @@ proc tabulate data=S4_1 missing noseps;
   class active tenure;
   var Acctnum;
   format tenure fmttenure.;
-  table  active=' ' all,
+  table  active=' ' all, /*this all comes at the end of the list of rows*/
         tenure=' '*Acctnum=' '*N=' '  all;
 run;
 
